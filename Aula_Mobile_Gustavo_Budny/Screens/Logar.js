@@ -1,13 +1,16 @@
-import{View, Image, StyleSheet, Text,  TextInput, Button} from 'react-native';
+import{View, Image, StyleSheet, Text,  TextInput, Button, TouchableOpacity} from 'react-native';
 
-export default function Logar (){
+export default function Logar ({navigation}){
     return(
         <View style={styles.container}>
             <Image style={styles.imagens} source={require('../Sources/neymar.jpg')} />
             <Text style={styles.texto}>loguin</Text>
             <TextInput  style={styles.input} placeholder='Usuario'></TextInput>
             <TextInput  style={styles.input} placeholder='Senha'></TextInput>
-            <Button title='Entrar'></Button>
+
+            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('pessoas_cad')}> 
+                <Text>acessar loguin</Text>
+            </TouchableOpacity>
         </View>
 )}
 
@@ -37,5 +40,11 @@ const styles = StyleSheet.create({
         width: 200,
         borderColor: '#0b0973ff',
         borderWidth: 5
+    },
+
+    botao : {
+        width: 300,
+        height: 200,
+        backgroundColor: '#e11b1bff'
     }
 })
