@@ -37,7 +37,7 @@ export default function Exemplo1AsyncStorage() {
 
     useEffect(() => {
         MostrarPessoa();
-    }, [nomeSalvo])
+    }, [])
 
     return (
         <View style={styles.container}>

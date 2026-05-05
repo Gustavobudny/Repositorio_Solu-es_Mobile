@@ -8,6 +8,7 @@ import ExemploAsyncStorage from "./Screens/ExemploAsyncStorage";
 import Exemplo1AsyncStorage from "./Screens/Exemplo1AsyncStorage";
 import Logar from './Screens/Logar';
 import Pessoas from "./Screens/Pessoas";
+import Prdutos from "./Screens/Produtos";
 
 function TabNavigate() {
   const Tab = createBottomTabNavigator();
@@ -15,6 +16,7 @@ function TabNavigate() {
     <Tab.Navigator>
       <Tab.Screen name= "Home" component={Pessoas}/>
       <Tab.Screen name= "Async" component={Exemplo1AsyncStorage}/>
+      <Tab.Screen name= "Produto" component={Prdutos}/>
     </Tab.Navigator>
   )
 }
