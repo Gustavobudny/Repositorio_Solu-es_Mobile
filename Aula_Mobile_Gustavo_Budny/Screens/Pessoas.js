@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
   },
   cards:{
     alignItems: 'center',
+    width: '300',
+    height: '200'
   
 
   }

@@ -8,7 +8,7 @@ export default function Logar ({navigation}){
             <TextInput  style={styles.input} placeholder='Usuario'></TextInput>
             <TextInput  style={styles.input} placeholder='Senha'></TextInput>
 
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('pessoas_cad')}> 
+            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Home')}> 
                 <Text>acessar loguin</Text>
             </TouchableOpacity>
         </View>
